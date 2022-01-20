@@ -1,8 +1,8 @@
 # What is Proof of Work?
 
-Ethereum, like Bitcoin, currently uses a consensus protocol called **Proof of Work (PoW)**. This allows all nodes on the Ethereum Network to agree on the current state of the blockchain, and secures the network against a variety of attacks.
+Like Bitcoin, Ethereum uses a consensus protocol called **Proof of Work (PoW)**. This allows all nodes on the Ethereum Network to agree on the current state of the blockchain and secures the network from various types of attacks.
 
-> Later in 2022, Proof of Work will be phased out in favour of Proof of Stake with Ethereum 2.0. We will talk about this in later tracks, and deprecate the Proof of Work tutorial once it does happen.
+> Later in 2022, Proof of Work will be phased out in favour of Proof of Stake with Ethereum 2.0. When this happens, we'll talk about it in later tracks, and we'll depreciate the Proof of Work tutorial once it's no longer relevant.
 
 ## What is consensus?
 Merriam-Webster defines the word 'consensus' as follows.
@@ -16,7 +16,7 @@ Consensus protocols help us achieve the agreement, or consensus, on the state of
 
 Although consensus protocols are not directly related to building dApps, understanding them will help you understand a lot of other concepts and build your fundamentals.
 
-Consensus protocols are primarily economic systems that help prevent certain kinds of attacks. Theoretically, an attacker could compromise consensus by controlling 51% of the network. Consensus protocols are designed to make this '51% attack' economically unfeasible. Different mechanisms are engineered to solve this problem differently.
+Consensus protocols are primarily economic systems that help prevent certain types of attacks. Theoretically, an attacker could compromise consensus by controlling 51% of the network. Consensus protocols are designed to make this '51% attack' economically unfeasible. Different mechanisms are engineered to solve this problem differently.
 
 ## What is Proof of Work?
 Proof of Work is a type of consensus protocol, famously used by Bitcoin and Ethereum.
@@ -27,7 +27,8 @@ Under Proof of Work, miners are responsible for producing new blocks. Miners in 
 The race is won by whoever's computer can solve a computationally hard mathematical puzzle the fastest. The problem is computationally hard to solve, but very easy to verify. The solution to this problem is the 'certificate of legitimacy' we discussed in the `What is Mining?` tutorial.
 
 ### Network Security
-The network is kept secure by the fact that to gain 51% control over the network, you would need 51% of the network's computational power. However, since Proof of Work incentivizes miners with mining rewards, a lot of different groups of miners are interested in running mining nodes. Therefore, getting 51% of all computational power on a network requires **huge** investments in equipment and electrical energy - which means you're likely to end up spending more than you would earn.
+The network is kept secure by the fact that to gain 51% control over the network, you would need 51% of the network's computational power. However, since Proof of Work incentivizes miners with mining rewards, a lot of different groups of miners are interested in running mining nodes. Therefore, to generate 51% of all computational power on a network requires an enormous investment in equipment and electrical energy, which means you'd have to spend more than you'd get back.
+
 
 ## Sybil Resistance
 Technically speaking, proof of work is **not** a consensus protocol by itself - though it is often referred to as such for simplicity. They are actually **Sybil resistance mechanisms** and **block producer selectors** - a way to decide who is going to be the producer of the latest block.
@@ -40,7 +41,7 @@ Hypothetically, if we were to choose the producer of a block just by random sele
 
 Suppose there are 2 miners on the network. Alice and Bob. By random selection, they should be getting roughly half of the mining rewards each. Now, Charlie comes along, but pretends to be 2 different users - Charlie and Darcy. By random selection now, Charlie would end up receiving 1/2 the mining rewards as he is pretending to be 2 different users, whereas Alice and Bob only get 1/4 each instead of 1/3 which they should.
 
-Proof of Work protects against Sybil attacks by making miners put up a large amount of computational power as collatateral, therefore having them expend a lot of electrical energy. This is done through the solving of the computation puzzle to prove that the miners are 'putting in the work'. This acts as an economic deterrent to Sybil attacks. 
+Proof of Work protects against Sybil attacks by making miners put up a large amount of computational power as Collateral, therefore having them expend a lot of electrical energy. This is done through the solving of the computation puzzle to prove that the miners are 'putting in the work'. This acts as an economic deterrent to Sybil attacks. 
 
 Since rewards are given out to successful miners, and miners become successful roughly proportional to their share of computational power on the network, it doesn't matter anymore if you're pretending to be 1 user or 2 or 100. You will get the same amount of mining rewards as your computation power stays the same.
 
