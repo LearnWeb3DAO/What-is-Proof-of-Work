@@ -129,3 +129,5 @@ The following are recommended, but optional, readings/viewings to understand mor
 - [51% Attacks](https://en.bitcoin.it/wiki/Majority_attack)
 - [Transaction Finality](https://blog.ethereum.org/2016/05/09/on-settlement-finality/)
 - [Ethash](https://eth.wiki/en/concepts/ethash/ethash)
+
+<SubmitQuiz />
