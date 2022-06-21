@@ -18,6 +18,8 @@ Although consensus protocols are not directly related to building dApps, underst
 
 Consensus protocols are primarily economic systems that help prevent certain kinds of attacks. Theoretically, an attacker could compromise consensus by controlling 51% of the network. Consensus protocols are designed to make this '51% attack' economically unfeasible. Different mechanisms are engineered to solve this problem differently.
 
+<Quiz questionId="1b20b974-144b-42bd-b12b-a921cc707641" />
+
 ## What is Proof of Work?
 Proof of Work is a type of consensus protocol, famously used by Bitcoin and Ethereum.
 
@@ -25,6 +27,8 @@ Proof of Work is a type of consensus protocol, famously used by Bitcoin and Ethe
 Under Proof of Work, miners are responsible for producing new blocks. Miners in the network compete against each other to create new blocks full of processed transactions. The winner then shares the block with the rest of the network, and earns freshly minted ETH for their hard work.
 
 The race is won by whoever's computer can solve a computationally hard mathematical puzzle the fastest. The problem is computationally hard to solve, but very easy to verify. The solution to this problem is the 'certificate of legitimacy' we discussed in the `What is Mining?` tutorial.
+
+<Quiz questionId="c400c10a-e01c-437e-8ad9-ff78b3fa2f4f" />
 
 ### Network Security
 The network is kept secure by the fact that to gain 51% control over the network, you would need 51% of the network's computational power. However, since Proof of Work incentivizes miners with mining rewards, a lot of different groups of miners are interested in running mining nodes. Therefore, getting 51% of all computational power on a network requires **huge** investments in equipment and electrical energy - which means you're likely to end up spending more than you would earn.
@@ -44,6 +48,10 @@ Proof of Work protects against Sybil attacks by making miners put up a large amo
 
 Since rewards are given out to successful miners, and miners become successful roughly proportional to their share of computational power on the network, it doesn't matter anymore if you're pretending to be 1 user or 2 or 100. You will get the same amount of mining rewards as your computation power stays the same.
 
+<Quiz questionId="d20c18e6-33db-47a7-a8ca-3dd7e686b4ba" />
+
+<Quiz questionId="4f14465c-42bb-4b7e-b1a2-8b3cfafc519b" />
+
 ## Chain Selection Rules
 
 Occasionally, two miners will produce valid blocks roughly at the same time. This can cause different nodes in the network to include different blocks in their blockchain. The technical term for this is a **fork**.
@@ -60,12 +68,18 @@ Occasionally, this means that transactions which get mined as part of a temporar
 
 > The blocks which form the forked chain and end up getting deleted are called **Uncle Blocks**. The miner clearly put in work to produce that Uncle block, and likely just lost out on the mining reward due to network latencies. As such, the Ethereum network still rewards Uncle block miners with 1.75 ETH for their hard work.
 
+<Quiz questionId="ace85e9d-6ab1-4582-b60e-e31cae973510" />
+
+<Quiz questionId="834107bf-2308-4b77-92aa-eac914f5ab85" />
+
 ## Finality
 A transaction has "finality" on Ethereum when it's part of a block that can't change.
 
 Because miners work in a decentralized way, two valid blocks can get mined at the same time. This creates a temporary fork. Eventually, one of these chains will become the accepted chain after a subsequent block has been mined and added, making it longer.
 
 But to complicate things further, transactions rejected on the temporary fork may have been included in the accepted chain. This means it could get reversed. So finality refers to the time you should wait before considering a transaction irreversible. For Ethereum, the recommended time is six blocks or just over 1 minute. After six blocks, you can say with relative confidence that the transaction was successful (more than 99.999% chance it will not be reverted now). You can wait longer for even greater assurances.
+
+<Quiz questionId="ce8a0d42-8244-4e5a-b3b7-aacd56125d37" />
 
 ## The 'Work' in Proof of Work
 We've been talking about a computationally hard mathematical problem that miners need to solve to provide a certificate of legitimacy. But what does this actually mean?
@@ -91,12 +105,18 @@ There is no way to solve this other than brute force, as currently there does no
 
 Take some time to read this section thoroughly, this is all there is to Proof of Work. It might seem quite anticlimactic, but think about what we started off wanting to prove. We wanted to prove that miners did hard work to produce this block, and it wasn't a piece of cake for them. Since they did hard work, it is in their best interest to not lie. This sort of computation puzzle does exactly that, because finding a valid `nonce` is a computationally hard problem - but verifying it is easy, so other nodes can easily verify that the miner did in fact find a valid `nonce`, which means they did in fact put in the work.
 
+<Quiz questionId="f0459255-52fd-4624-a9d4-371276bf3d56" />
+
+<Quiz questionId="834107bf-2308-4b77-92aa-eac914f5ab85" />
+
 ## How does Bitcoin actually work?
 I recommend this video to everyone even slightly curious about the workings of a blockchain, and how blocks get validated and produced. 
 
 Watch the following video for a visual understanding of everything we just read about Proof of Work.
 
 [![But how does Bitcoin actually work?](https://i.imgur.com/b6FKTLt.png)](https://www.youtube.com/watch?v=bBC-nXj3Ng4)
+
+<Quiz questionId="8ffc9173-d394-46c9-b96d-b31ba64c3a63" />
 
 ## Resources
 The following are recommended, but optional, readings/viewings to understand more about Proof of Work.
