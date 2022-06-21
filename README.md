@@ -18,7 +18,6 @@ Although consensus protocols are not directly related to building dApps, underst
 
 Consensus protocols are primarily economic systems that help prevent certain kinds of attacks. Theoretically, an attacker could compromise consensus by controlling 51% of the network. Consensus protocols are designed to make this '51% attack' economically unfeasible. Different mechanisms are engineered to solve this problem differently.
 
-<Quiz questionId="1b20b974-144b-42bd-b12b-a921cc707641" />
 
 ## What is Proof of Work?
 Proof of Work is a type of consensus protocol, famously used by Bitcoin and Ethereum.
@@ -32,6 +31,8 @@ The race is won by whoever's computer can solve a computationally hard mathemati
 
 ### Network Security
 The network is kept secure by the fact that to gain 51% control over the network, you would need 51% of the network's computational power. However, since Proof of Work incentivizes miners with mining rewards, a lot of different groups of miners are interested in running mining nodes. Therefore, getting 51% of all computational power on a network requires **huge** investments in equipment and electrical energy - which means you're likely to end up spending more than you would earn.
+
+<Quiz questionId="1b20b974-144b-42bd-b12b-a921cc707641" />
 
 ## Sybil Resistance
 Technically speaking, proof of work is **not** a consensus protocol by itself - though it is often referred to as such for simplicity. They are actually **Sybil resistance mechanisms** and **block producer selectors** - a way to decide who is going to be the producer of the latest block.
@@ -70,7 +71,7 @@ Occasionally, this means that transactions which get mined as part of a temporar
 
 <Quiz questionId="ace85e9d-6ab1-4582-b60e-e31cae973510" />
 
-<Quiz questionId="834107bf-2308-4b77-92aa-eac914f5ab85" />
+
 
 ## Finality
 A transaction has "finality" on Ethereum when it's part of a block that can't change.
@@ -80,6 +81,8 @@ Because miners work in a decentralized way, two valid blocks can get mined at th
 But to complicate things further, transactions rejected on the temporary fork may have been included in the accepted chain. This means it could get reversed. So finality refers to the time you should wait before considering a transaction irreversible. For Ethereum, the recommended time is six blocks or just over 1 minute. After six blocks, you can say with relative confidence that the transaction was successful (more than 99.999% chance it will not be reverted now). You can wait longer for even greater assurances.
 
 <Quiz questionId="ce8a0d42-8244-4e5a-b3b7-aacd56125d37" />
+
+<Quiz questionId="1ba3c8dd-3f1e-4e8b-a670-6cfffbb9aa0d" />
 
 ## The 'Work' in Proof of Work
 We've been talking about a computationally hard mathematical problem that miners need to solve to provide a certificate of legitimacy. But what does this actually mean?
