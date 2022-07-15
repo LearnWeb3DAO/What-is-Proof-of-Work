@@ -16,7 +16,7 @@ Consensus protocols help us achieve the agreement, or consensus, on the state of
 
 Although consensus protocols are not directly related to building dApps, understanding them will help you understand a lot of other concepts and build your fundamentals.
 
-Consensus protocols are primarily economic systems that help prevent certain kinds of attacks. Theoretically, an attacker could compromise consensus by controlling 51% of the network. Consensus protocols are designed to make this '51% attack' economically unfeasible. Different mechanisms are engineered to solve this problem differently.
+Consensus protocols are primarily economic systems that help prevent certain kinds of attacks. Theoretically, an attacker could compromise consensus by controlling 51% of the network. Consensus protocols are designed to make this '51% attack' economically unfeasible. Different mechanisms are engineered to solve this problem in different ways.
 
 
 ## What is Proof of Work?
@@ -95,7 +95,7 @@ The Ethereum proof-of-work protocol, **Ethash**, requires miners to go through a
 
 - The miner selects a group of transactions to include in a potential block
 - Based on the block they create, the network has rules to choose a slice of data (roughly ~1GB in size) from the current state of the blockchain network. These rules are not particularly relevant, but you can read more about them in the Ethash docs.
-- They put the dataset through a hashing function to calculate a `target` value. This `target` is a number, which is inversely proportionate to the mining difficulty. The higher the mining difficulty, the lower the `target`, and vice versa.
+- They put the dataset through a hashing function to calculate a `target` value. This `target` is a number, which is inversely proportional to the mining difficulty. The higher the mining difficulty, the lower the `target`, and vice versa.
 - Then, the miner uses brute force to try to find another random number called the `nonce`. 
 - Putting the combination of the dataset, target, nonce, and a couple other values through a hashing function should result in a number that is lower than the `target`.
 - `HashFunction(dataset, target, nonce, ...) = a number` 
